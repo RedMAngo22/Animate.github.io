@@ -3,6 +3,12 @@
   <head>
     <link rel="stylesheet" href="animation.css" />
     <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+      #text {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
     <script>
       function animation() {
         var blue = document.getElementById("blue");
@@ -35,7 +41,7 @@
   <div class="ease redBG" style="left: 100%; width: 100%;" id="red"></div>
   <div class="ease blackBG" style="top: -100%; height: 100%;" id="black"></div>
   <div class="ease yellowBG" style="top: 100%; height: 33.33%;" id="yellow"></div>
-  <div class="ease" style="top: 50%; transform: translateY(-50%); opacity: 0; color: #ffffff; pointer-events: none; height: 1em;" id="text">
+  <div class="ease" style="text-align: center; top: 50%; transform: translateY(-50%); opacity: 0; color: #ffffff; pointer-events: none; height: 1em;" id="text">
     Apprenez l'Allemand!
   </div>
 </div>
