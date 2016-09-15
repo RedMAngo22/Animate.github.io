@@ -9,7 +9,7 @@
         var red = document.getElementById("red");
         var white = document.getElementById("white");
         blue.style.left = "0";
-        red.style.right = "0";
+        red.style.left = "66%";
         white.style.left = "33%";
         white.style.width = "33%";
         setTimeout(function() {
@@ -21,6 +21,6 @@
     </script>
   </head>
   <div class="ease-in blueBG" style="left: -33%; width: 33%;" id="blue"></div>
-  <div class="ease-in whiteBG" style="left:0%; width: 100%;" onclick="animation();" id="white"></div>
-  <div class="ease-in redBG" style="right: 33%; width: 33%;" id="red"></div>
+  <div class="ease-in whiteBG" style="left: 0%; width: 100%;" onclick="animation();" id="white"></div>
+  <div class="ease-in redBG" style="left: 100%; width: 0%;" id="red"></div>
 </div>
