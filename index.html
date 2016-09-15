@@ -11,13 +11,13 @@
         var black = document.getElementById("black");
         var yellow = document.getElementById("yellow");
         blue.style.left = "0";
-        red.style.left = "66%";
+        red.style.left = "66.66%";
         setTimeout(function() {
-          blue.style.left = "-33%";
+          blue.style.left = "-33.33%";
           red.style.left = "0";
           setTimeout(function() {
-            black.style.top = "-66%";
-            yellow.style.top = "66%";
+            black.style.top = "-66.66%";
+            yellow.style.top = "66.66%";
             setTimeout(function() {
               black.style.top = "0";
               yellow.style.top = "100%";
@@ -27,9 +27,9 @@
       }
     </script>
   </head>
-  <div class="ease blueBG" style="left: -33%; width: 33%;" id="blue"></div>
+  <div class="ease blueBG" style="left: -33.33%; width: 33.33%;" id="blue"></div>
   <div class="ease whiteBG" style="left: 0%; width: 100%;" onclick="animation();" id="white"></div>
   <div class="ease redBG" style="left: 100%; width: 100%;" id="red"></div>
   <div class="ease blackBG" style="top: -100%; height: 100%;" id="black"></div>
-  <div class="ease yellowBG" style="top: 100%; height: 33%;" id="yellow"></div>
+  <div class="ease yellowBG" style="top: 100%; height: 33.33%;" id="yellow"></div>
 </div>
