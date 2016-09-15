@@ -10,17 +10,14 @@
         var white = document.getElementById("white");
         blue.style.left = "0";
         red.style.left = "66%";
-        white.style.left = "33%";
-        white.style.width = "33%";
         setTimeout(function() {
-          white.style.left = "-33%";
-          blue.style.left = "-66%";
-          red.style.width = "100%";
-        }, 500);
+          blue.style.left = "-33%";
+          red.style.left = "0";
+        }, 2000);
       }
     </script>
   </head>
-  <div class="ease-in blueBG" style="left: -33%; width: 33%;" id="blue"></div>
-  <div class="ease-in whiteBG" style="left: 0%; width: 100%;" onclick="animation();" id="white"></div>
-  <div class="ease-in redBG" style="left: 100%; width: 0%;" id="red"></div>
+  <div class="ease blueBG" style="left: -33%; width: 33%;" id="blue"></div>
+  <div class="ease whiteBG" style="left: 0%; width: 100%;" onclick="animation();" id="white"></div>
+  <div class="ease redBG" style="left: 100%; width: 100%;" id="red"></div>
 </div>
