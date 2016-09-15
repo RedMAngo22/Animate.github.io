@@ -1,5 +1,7 @@
 body {
- margin: 0px; 
+ margin: 0px;
+ width: 100%;
+ overflow-x: hidden;
 }
 div {
   position: absolute;
