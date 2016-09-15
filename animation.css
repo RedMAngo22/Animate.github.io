@@ -11,6 +11,7 @@ div {
   height: 100%;
   left: 0;
   top: 0;
+  box-sizing: border-box;
 }
 .ease-in {
   transition: all 1s ease-in;
