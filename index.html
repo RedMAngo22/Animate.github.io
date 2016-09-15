@@ -6,10 +6,21 @@
     <script>
       function animation() {
         var blue = document.getElementById("blue");
+        var red = document.getElementById("red");
+        var white = document.getElementById("white");
         blue.style.left = "0";
+        red.style.right = "0";
+        white.style.left = "33%";
+        white.style.width = "33%";
+        setTimeout(function() {
+          white.style.left = "-33%";
+          blue.style.left = "-66%";
+          red.style.width = "100%";
+        }, 500);
       }
     </script>
   </head>
   <div class="ease-in blueBG" style="left: -33%; width: 33%;" id="blue"></div>
-  <div class="whiteBG" style="left:0%; width: 100%;" onclick="animation();" id="white"></div>
+  <div class="ease-in whiteBG" style="left:0%; width: 100%;" onclick="animation();" id="white"></div>
+  <div class="ease-in redBG" style="right: 33%; width: 33%;" id="red"></div>
 </div>
